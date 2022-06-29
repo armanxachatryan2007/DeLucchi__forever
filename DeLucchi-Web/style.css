@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+    .navigation {
+        display: none;
+    }
+
+    .header .burger__menu {
+        display: block;
+    }
+    
+    .change .burger__menu__text {
+        display: block;
+    }
+
+    .change .burger__menu__text {
+        display: block;
+        width: 90%;
+        height: 380px;
+        background-color: aliceblue;
+        margin-top: 38px;
+        border-radius: 5px;
+        position: absolute;
+        left: 10px;
+        margin-left: 20px;
+        
+        transition: 0.6s all ease;
+    }
+
+    .burger__menu .burger__link {
+        color: black;
+        display: flex;
+        padding: 20px;
+    }
+
+    .burger__menu .burger__link {
+        text-decoration: none;
+        margin: 20px;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-12px, 6px);
+        transition: 0.6s all ease;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-12px, -8px);
+        transition: 0.6s all ease;
+    }
+}
+
+.header {
+    display: block;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+
+    padding-bottom: 20px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    
+}
+
+.navigation{
+    justify-content: right;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 400;
+
+    margin: 25px;
+}
+
+.link:hover {
+    border-bottom: 5px solid gold;
+    padding-bottom: 50px;
+    color: gold;
+    transition: 0.3s all ease;
+}
+
+.burger__menu {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: white;
+    width: 45px;
+    height: 6px;
+    margin: 8px 0px;
+}
+
+.burger__menu__text {
+    display: none;
+}
+
+
+
+.intro__img__one {
+    width: 1800px;
+}
