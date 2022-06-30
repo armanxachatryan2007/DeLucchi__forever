@@ -1,54 +1,69 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=   bMontserrat:wght@100&family=Open+Sans&family=Raleway:wght@400;700&display=swap"   rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
     <title>DeLucchi</title>
 </head>
 <body>
 <!-- Header -->
     <header class="header">
-       <div class="header__inner">
-            <div class="header__logo">
-                <img src="logo1.jpg" alt=""></img>
-            </div>
-            <nav class="navigation">
-                <a class="link" href="#">Home</a>
-                <a class="link" href="#">About</a>
-                <a class="link" href="#">Work</a>
-                <a class="link" href="#">Contact</a>
-            </nav>
+        <div class="header__inner">
+             <div class="header__logo">
+                 <img src="logo1.jpg" alt=""></img>
+             </div>
+             <nav class="navigation">
+                 <a class="link" href="#">Home</a>
+                 <a class="link" href="#about">About</a>
+                 <a class="link" href="#">Work</a>
+                 <a class="link" href="#">Contact</a>
+             </nav>
+ 
+             <div class="burger__menu" onclick="myFunction(this)">
+                 <div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+ 
+                 <div class="burger__menu__text">
+                     <a class="burger__link" href="#">Home</a>
+                     <a class="burger__link" href="#">About</a>
+                     <a class="burger__link" href="#">Work</a>
+                     <a class="burger__link" href="#">Contact</a>
+                 </div>
+             </div>
+        </div>
+     </header>
+ 
+<!---Intro One-->
+     <div class="intro__one">
+         <div class="intro__one__text">
+             <p>Welcome to</p> <p class="intro__one__logo">DeLucchi</p>
+         </div>
+ 
+         <div class="intro__one__icon">
+             <img src="logo2.png" alt="">
+         </div>
+     </div>
 
-            <div class="burger__menu" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-
-                <div class="burger__menu__text">
-                    <a class="burger__link" href="#">Home</a>
-                    <a class="burger__link" href="#">About</a>
-                    <a class="burger__link" href="#">Work</a>
-                    <a class="burger__link" href="#">Contact</a>
-                </div>
-            </div>
-       </div>
-    </header>
-
-    <hr>
-
-    <div class="intro__one">
-        <div class="intro__one__text">
-            <p>Welcome to</p> <p class="intro__one__logo">DeLucchi</p>
+<!---Intro Two-->
+     <div class="intro__two">
+        <div class="intro__two__logo">
+            <a id="about" href="#"><h1>About</h1></a>
         </div>
 
-        <div class="intro__one__icon">
-            <img src="logo2.png" alt="">
+        <div class="intro__two__text">
+            <div class="intro__two__box__one">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus ullam modi tempore quisquam ipsum, doloremque accusantium expedita in fugit.
+            </div>
+            <div class="intro__two__box__two">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, exercitationem nemo earum reiciendis laudantium minus possimus laboriosam sint blanditiis ex.
+            </div>
         </div>
-    </div>
-
-
-
-<script src="script.js"></script>    
+     </div>
+ 
+ <script src="script.js"></script>
 </body>
 </html>
