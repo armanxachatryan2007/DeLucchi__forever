@@ -6,6 +6,12 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+@media screen and (max-width: 1800px) {
+    .intro__one__text p {
+        font-size: 75px;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .navigation {
         display: none;
@@ -14,20 +20,15 @@ body {
     .header .burger__menu {
         display: block;
     }
-    
-    .change .burger__menu__text {
-        display: block;
-    }
 
     .change .burger__menu__text {
         display: block;
-        width: 93%;
-        height: 350px;
-        background-color: white;
-        margin-top: 38px;
-        border-radius: 5px;
+        width: 100%;
+        height: 365px;
+        background-color: black;
+        margin-top: 10px;
         position: absolute;
-        left: 30px;
+        left: 0;
         
         transition: 0.6s all ease;
     }
@@ -37,7 +38,9 @@ body {
     }
 
     .burger__menu .burger__link {
-        color: black;
+        color: white;
+        border-bottom: 1px solid #ffec83;
+        width: 80%;
         display: flex;
         padding: 20px;
     }
@@ -60,6 +63,10 @@ body {
         transform: rotate(45deg) translate(-12px, -8px);
         transition: 0.6s all ease;
     }
+
+    .intro__one__text p {
+        font-size: 40px;
+    }
 }
 
 .header {
@@ -76,7 +83,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 25px;
+    padding: 5px 25px;
 }
 
 .navigation{
@@ -89,7 +96,7 @@ body {
     color: white;
     text-decoration: none;
     margin-left: 20px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
 
     margin: 25px;
@@ -97,7 +104,7 @@ body {
 
 .link:hover {
     border-bottom: 5px solid gold;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     color: gold;
     transition: 0.3s all ease;
 }
@@ -117,4 +124,43 @@ body {
 
 .burger__menu__text {
     display: none;
+}
+
+
+
+
+
+.intro__one {
+    padding-top: 200px;
+    background: url(intro1.jpg);
+    height: 600px;
+}
+
+.intro__one__text p {
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.intro__one__text .intro__one__logo {
+    color: #ffec83;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro__one__icon {
+    text-align: center;
+    margin-top: 40px;
+
+    animation: oneicon 0.7s alternate-reverse infinite;
+}
+
+@keyframes oneicon {
+    to {
+        padding-top: 0px;
+    }
+    from {
+        padding-top: 50px;
+    }
 }
