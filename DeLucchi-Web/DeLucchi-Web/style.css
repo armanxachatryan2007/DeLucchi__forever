@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 1800px) {
+    .intro__one__text p {
+        font-size: 75px;
+    }
+   
+    .intro__two__text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro__two__box__one,
+    .intro__two__box__two__text {
+        width: 300px;
+    }
+
+    .intro__two__box__two__all__icon__text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro__two__box__two__all__icon__text__one__text,
+    .intro__two__box__two__all__icon__text__two__text,
+    .intro__two__box__two__all__icon__text__three__text {
+        border: 1px solid white;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .intro__two {
+        height: 720px;
+    }
+
+    .intro__two__box__one,
+    .intro__two__box__two__text {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .intro__two__text {
+        display: inline-block;
+    }
+
+    .intro__two__box__two__all__icon__text {
+        display: inline-block;
+    }
+
+    .intro__two {
+        height: 1500px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .navigation {
+        display: none;
+    }
+
+    .header .burger__menu {
+        display: block;
+    }
+
+    .change .burger__menu__text {
+        display: block;
+        width: 100%;
+        height: 365px;
+        background-color: black;
+        margin-top: 10px;
+        position: absolute;
+        left: 0;
+        
+        transition: 0.6s all ease;
+    }
+
+    .header__logo img {
+        width: 200px;
+    }
+
+    .burger__menu .burger__link {
+        color: white;
+        border-bottom: 1px solid #ffec83;
+        width: 80%;
+        display: flex;
+        padding: 20px;
+    }
+
+    .burger__menu .burger__link {
+        text-decoration: none;
+        margin: 20px;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-12px, 6px);
+        transition: 0.6s all ease;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-12px, -8px);
+        transition: 0.6s all ease;
+    }
+
+    .intro__one__text p {
+        font-size: 40px;
+    }
+
+    .intro__two__box__one,
+    .intro__two__box__two__text {
+        width: 200px;
+    }
+
+    .intro__two__box__two__all__icon__text__one__text,
+    .intro__two__box__two__all__icon__text__two__text,
+    .intro__two__box__two__all__icon__text__three__text {
+        width: 190px;
+    }
+
+    .intro__two__box__one,
+    .intro__two__box__two__text {
+        height: 150px;
+    }
+
+    .intro__two {
+        height: 1930px;
+    }
+}
+
+/* =========HEADER============
+========================*/
+
+.header {
+    display: block;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+
+    padding-bottom: 20px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+}
+
+.navigation{
+    justify-content: right;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+
+    margin: 25px;
+}
+
+.link:hover {
+    border-bottom: 5px solid gold;
+    padding-bottom: 50px;
+    color: gold;
+    transition: 0.3s all ease;
+}
+
+.burger__menu {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: white;
+    width: 45px;
+    height: 6px;
+    margin: 8px 0px;
+}
+
+.burger__menu__text {
+    display: none;
+}
+
+/*======= Intro One ================
+======================== */
+
+.intro__one {
+    padding-top: 200px;
+    background: url(intro1.jpg);
+    height: 600px;
+}
+
+.intro__one__text p {
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.intro__one__text .intro__one__logo {
+    color: #ffec83;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro__one__icon {
+    text-align: center;
+    margin-top: 40px;
+
+    animation: oneicon 0.7s alternate-reverse infinite;
+}
+
+@keyframes oneicon {
+    to {
+        padding-top: 0px;
+    }
+    from {
+        padding-top: 50px;
+    }
+}
+
+
+
+.intro__two {
+    padding-top: 100px;
+    text-align: center;
+    background: url(intro2.jpg);
+}
+
+.intro__two__logo {
+    margin-bottom: 30px;
+}
+
+.intro__two__logo a {
+    text-decoration: none;
+    color: #ffec83;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.intro__two__box__one,
+.intro__two__box__two__text {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    color: white;
+}
+
+.intro__two__icon__title {
+    font-size: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #ffec83;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.intro__two__box__two__icon {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.intro__two__box__two__all__icon__text__one__logo h3,
+.intro__two__box__two__all__icon__text__two__logo h3,
+.intro__two__box__two__all__icon__text__three__logo h3 {
+    margin-bottom: 20px;
+    color: #ffec83;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
